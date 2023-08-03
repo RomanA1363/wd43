@@ -11,3 +11,4 @@ df.isna().sum()
 df.duplicated()
 df.loc[df.duplicated()]
 df.query('last_name == "Mumbey"')
+df['car_model'].value_counts()
