@@ -1,0 +1,120 @@
+[
+    {
+        "root_id": "7d612c27-486e-44b0-8d16-ef362815f3d5",
+        "verato_id": "0097ec6d-7323-4a86-8183-dd2f56b6e13d",
+        "msh_4": "Kayveo",
+        "msh_6": "Meevee",
+        "msh_7": "2023-04-03T02:01:53Z",
+        "msh_9_1": "ADT",
+        "msh_9_2": "A41",
+        "msh_10": "G1408298011702804740",
+        "msh_22_10 ": "K5717608907247758133",
+        "pv1_3_4 ": "Other Long Term Care",
+        "pid_3_1 ": "KYCP-239619-P3",
+        "pid_5_1": "Isador",
+        "pid_5_2": "MacNeil",
+        "pid_7": "2013-04-29",
+        "pid_8": "F",
+        "pid_19": "444-67-5113",
+        "obr_2": "UJSL-636-I-355-H2",
+        "obr_3": "FJMX-891-E-598-U3",
+        "obr_24": "SCUR-103-N-731-D5",
+        "inbound_comm_point": "comm point 2 tttt",
+        "verato_exception": null,
+        "original_file_name": "A41 transaction from XYZ.hl7", 
+        "saved_original_file_name": "db335555-8963-4bc0-b550-eb3452e23a46", 
+        "payload_type": "HL7", 
+        "restrictions": {
+            "P2": false,
+            "SDOH": false,
+            "OR": false
+        },
+        "ccd": {
+            "authorInstitution": "org2",
+            "custodian": {
+                "name": "Ecole Supérieure de Commerce de Grenoble",
+                "phone": "(901) 8726512",
+                "streetAddressLine": "2670 Katie Lane",
+                "city": "Memphis",
+                "state": "TN",
+                "postalCode": "38143",
+                "country": "USA"
+            }
+        },
+        "replays": [
+            {
+                "replay_event": 1,
+                "targets": [
+                    {
+                        "target": "State of Vermont",
+                        "via_route": "route A",
+                        "transformations": [
+                            {
+                                "step_id":"2338791",
+                                "step_name":"transformation step ABC"
+                             },
+                             {
+                                 "step_id":"890128",
+                                 "step_name":"transformation step FFA"
+                             },
+                             {
+                                "step_id":"336709",
+                                "step_name":"transformation step XYZ"
+                            }
+                        ],
+                        "outbound_comm_point": "73.1.205.165/5",
+                        "protocol": "TCP/IP",
+                        "file_name": "c35a190a-ce5e-459a-b43d-b2c9b0c41a2f", 
+                        "departure_dts": "2023-04-04T17:47:53Z",
+                        "ack_dts": "2023-04-03T18:35:29Z",
+                        "ack_code": "AA",
+                        "ack_control_id": "5542542055"
+                    }
+                ]
+            },
+            {
+                "replay_event": 2,
+                "targets": [
+                    {
+                        "target": "Yacero",
+                        "via_route": "route B",
+                        "transform_id": "7478245892", 
+                        "delivery": "15.11.67.28/13",
+                        "file_name": "753c4bc7-4f9b-45c8-9fb0-19754572eede",
+                        "departure_dts": "2023-04-04T02:35:49Z",
+                        "ack_dts": "2023-04-04T02:09:45Z",
+                        "ack_code": "AE",
+                        "ack_control_id": "6114732528"
+                    },
+                    {
+                        "target": "Photobug",
+                        "via_route": "route C",
+                        "transform_id": "9783250569",
+                        "delivery": "0.232.52.162/27",
+                        "file_name": "abba39fc-152a-42a6-a2d8-a3e8c50e7e5a",
+                        "departure_dts": "2023-04-01T02:06:14Z",
+                        "ack_dts": "2023-04-01T03:31:55Z",
+                        "ack_code": "AA",
+                        "ack_control_id": "0616490707"
+                    }
+                ]
+            },
+            {
+                "replay_event": 3,
+                "targets": [
+                    {
+                        "target": "Omba",
+                        "via_route": "route C",
+                        "transform_id": "0952410087",
+                        "delivery": "234.113.31.176/24",
+                        "file_name": "688e8b65-b087-4225-a1a8-b67b6c5bb3a0",
+                        "departure_dts": "2023-04-03T17:18:56Z",
+                        "ack_dts": "2023-04-04T21:40:58Z",
+                        "ack_code": "CA",
+                        "ack_control_id": "0148464530"
+                    }
+                ]
+            }
+        ]
+    }
+]
