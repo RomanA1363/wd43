@@ -11,6 +11,8 @@ from faker import Faker
 os.system("clear")
 
 adt_hl7_types = ["ADT_A01", "ADT_A02", "ADT_A03", "ADT_A04", "ADT_A05", "ADT_A06", "ADT_A08", "ADT_A12", "ADT_A15", "ADT_A16"]
+gender = ['M','F']
+TF = ['T','F']
 medical_facilities_types = ["ER", "Hospital", "Clinic", "Ambulance", "Urgent Care", "Doctor's Office", "Dentist's Office", "Optometrist's Office", "Pharmacy", "Physical Therapy Clinic", "Mental Health Clinic"]
 
 # generate random dts in a range
@@ -44,21 +46,19 @@ telemetry = {
   "msh_22_10 ": ''+ generate_random_alphanumeric_string(15)+'',
   "pv1_3_4 ": ''+random.choice(medical_facilities_types)+'',
   "pid_3_1 ": ''+generate_random_alphanumeric_string(15)+'',
-
   "pid_5_1": ''+fake.last_name()+'',
   "pid_5_2": ''+fake.first_name()+'',
-
-
   "pid_7": ''+fake.date()+'',
-  "pid_19 ": ''+fake.ssn()+''
- 
+  "pid_19 ": ''+fake.ssn()+'',
+  "pid_8": ''+random.choice(gender)+'',
+  "obr_2": ''+generate_random_alphanumeric_string(10)+'',
+  "obr_3": ''+generate_random_alphanumeric_string(10)+'',
+  "obr_24": ''+generate_random_alphanumeric_string(10)+'',
+  "Part2": ''+random.choice(TF)+'',
+  "SDOH": ''+random.choice(TF)+'' 
 }
 
-json_object = {
-    "name": "John Doe",
-    "age": 30,
-    "city": "New York"
-}
+
 
 print(json.dumps(telemetry))
 print('--------------------------------------------------------------------------------------------------------------------------------------------')
