@@ -62,6 +62,7 @@ telemetry = {
   "obr_24": ''+generate_random_alphanumeric_string(10)+'',
   "Part2": ''+random.choice(TF)+'',
   "SDOH": ''+random.choice(TF)+'',
+  "Other": ''+random.choice(TF)+'',
   "inbound_comm_point": ''+random.choice(CommPoint)+'',
   "verato_exception": ''+random.choice(verato_exception)+'',
   "original_file_name": ''+str(uuid.uuid4())+'.hl7',
@@ -73,6 +74,6 @@ telemetry = {
 
 print(json.dumps(telemetry))
 print('--------------------------------------------------------------------------------------------------------------------------------------------')
-for key, value in telemetry.items():
-  print(key, value)
+# for key, value in telemetry.items():
+#   print(key, value)
 
