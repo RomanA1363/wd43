@@ -62,4 +62,3 @@ print('-------------------------------------------------------------------------
 for key, value in telemetry.items():
   print(key, value)
 
--1000
