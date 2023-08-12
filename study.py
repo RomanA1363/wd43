@@ -36,14 +36,17 @@ telemetry = {
   "root_id": ''+str(uuid.uuid4())+'',
   "verato_id": ''+str(uuid.uuid4())+'',
   "msh_7": ''+str(gen_datetime(2023, 2023))+'',
-  "msh_4": ''+fake.last_name()+'',
-  "msh_6": ''+fake.first_name()+'',
+  "msh_4": ''+fake.company()+'', # MSH.4 - Sending Facility
+  "msh_6": ''+fake.company()+'', #  MSH.6 - Receiving Facility
   "msh_9_1": "ADT",
   "msh_9_2": ''+random.choice(adt_hl7_types)+'',
   "msh_10": ''+generate_random_alphanumeric_string(15)+'',
   "msh_22_10 ": ''+ generate_random_alphanumeric_string(15)+'',
   "pv1_3_4 ": ''+random.choice(medical_facilities_types)+'',
   "pid_3_1 ": ''+generate_random_alphanumeric_string(15)+'',
+
+  "pid_5_1": ''+fake.last_name()+'',
+  "pid_5_2": ''+fake.first_name()+'',
 
 
   "pid_7": ''+fake.date()+'',
