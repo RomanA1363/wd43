@@ -1,0 +1,24 @@
+# https://www.youtube.com/watch?v=xi0vhXFPegw
+# https://www.mockaroo.com/schemas/548489
+# https://devinschumacher.com/how-to-combine-merge-multiple-csv-or-excel-files-for-mac-pc/
+# https://www.statology.org/pandas-convert-object-to-int/
+
+
+
+Data Pipeline
+https://www.youtube.com/watch?v=mi9f9zOaqM8
+
+Harvard CS50’s Introduction to Programming with Python – Full University Course
+https://www.youtube.com/watch?v=nLRL_NcnK-4
+
+Online Python - IDE, Editor, Compiler, Interpreter
+https://www.online-python.com
+
+Online Python compiler (interpreter) to run Python online
+https://www.programiz.com/python-programming/online-compiler/
+
+6 Good Online Python Compiler to Run Code in the browser
+https://geekflare.com/online-python-compiler/
+
+Make Your Pandas Code Lightning Fast
+https://www.youtube.com/watch?v=SAFmrTnEHLg
