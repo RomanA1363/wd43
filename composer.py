@@ -4,11 +4,14 @@ import random
 import json
 from datetime import datetime, timedelta
 from faker import Faker
+import ccd as c
 
 # https://faker.readthedocs.io/en/master/providers/faker.providers.date_time.html
 
 
 os.system("clear")
+
+
 
 SendingOrg = ['Sending Organization 1','Sending Organization 2','Sending Organization 3','Sending Organization 4','Sending Organization 5']
 ReceivingOrg = ['Receiving Organization 1','Receiving Organization 2','Receiving Organization 3','Receiving Organization 4','Receiving Organization 5']
@@ -67,13 +70,16 @@ telemetry = {
   "verato_exception": ''+random.choice(verato_exception)+'',
   "original_file_name": ''+str(uuid.uuid4())+'.hl7',
   "archived_file_name": ''+str(uuid.uuid4())+'',
-  "payload_type": ''+random.choice(PayloadType)+''
+  "payload_type": ''+random.choice(PayloadType)+'',
+  # ccda from here
+  "ccd": c.generate_ccd(144)
 }
 
 
 
-print(json.dumps(telemetry))
-print('--------------------------------------------------------------------------------------------------------------------------------------------')
+#print(json.dumps(telemetry, indent=4, sort_keys=True))
+print(json.dumps(telemetry, indent=4))
+#print('--------------------------------------------------------------------------------------------------------------------------------------------')
 # for key, value in telemetry.items():
 #   print(key, value)
 
