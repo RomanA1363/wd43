@@ -42,6 +42,7 @@ def generate_random_alphanumeric_string(length):
   return random_string
 
 fake = Faker()
+plt = ''+random.choice(PayloadType)+''
 
 telemetry = {
   "root_id": ''+str(uuid.uuid4())+'',
@@ -70,9 +71,8 @@ telemetry = {
   "verato_exception": ''+random.choice(verato_exception)+'',
   "original_file_name": ''+str(uuid.uuid4())+'.hl7',
   "archived_file_name": ''+str(uuid.uuid4())+'',
-  "payload_type": ''+random.choice(PayloadType)+'',
-  # ccda from here
-  "ccd": c.generate_ccd(144)
+  "payload_type": plt,
+  "ccd": c.generate_ccd(plt)
 }
 
 
