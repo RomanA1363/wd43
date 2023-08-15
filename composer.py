@@ -16,7 +16,7 @@ os.system("clear")
 SendingOrg = ['Sending Organization 1','Sending Organization 2','Sending Organization 3','Sending Organization 4','Sending Organization 5']
 ReceivingOrg = ['Receiving Organization 1','Receiving Organization 2','Receiving Organization 3','Receiving Organization 4','Receiving Organization 5']
 CommPoint = ['Comm Point 1','Comm Point  2','Comm Point  3','Comm Point  4','Comm Point  5']
-PayloadType = ['HL7','CCDA','FHIR','CSV']
+PayloadType = ['HL7','CCD','FHIR','CSV']
 verato_exception = ['','','','','','','exception 1','','','','','','','','','','','','','','','','','','','','','exception 2','','','','','','','','','',]
 
 adt_hl7_types = ["ADT_A01", "ADT_A02", "ADT_A03", "ADT_A04", "ADT_A05", "ADT_A06", "ADT_A08", "ADT_A12", "ADT_A15", "ADT_A16"]
