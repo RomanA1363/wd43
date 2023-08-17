@@ -7,6 +7,7 @@ from faker import Faker
 import ccd as c
 
 # https://faker.readthedocs.io/en/master/providers/faker.providers.date_time.html
+# https://faker.readthedocs.io/en/master/providers/faker.providers.address.html
 
 
 os.system("clear")
