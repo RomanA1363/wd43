@@ -22,3 +22,8 @@ https://geekflare.com/online-python-compiler/
 
 Make Your Pandas Code Lightning Fast
 https://www.youtube.com/watch?v=SAFmrTnEHLg
+
+https://pynative.com/make-python-class-json-serializable/
+https://docs.pydantic.dev/latest/
+https://pypi.org/project/fhir.resources/
+

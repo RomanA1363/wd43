@@ -56,3 +56,28 @@ print(json.dumps(result, indent=4))
 #print(json.dumps(steps(), indent=4))
 #print(steps())
 
+
+# @dataclass
+# class Rank:
+#    r1: int
+#    r2: int
+#    r3: int
+
+
+@dataclass
+class Address:
+    street_address: str
+    city: str
+    state: str
+    zip_code: str
+    friends: List[str]
+   
+
+@dataclass
+class xPatient:
+    id: str
+    name: str
+    ssn: str
+    age: int
+    address: Address
+
