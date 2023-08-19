@@ -1,0 +1,146 @@
+{
+    "__dict__": {
+        "resource_type": "Patient",
+        "fhir_comments": "this is the value of the data element fhir_comments",
+        "id": "6d042703-c8b2-4498-abb0-f5a4f3d1675f",
+        "implicitRules": null,
+        "implicitRules__ext": null,
+        "language": null,
+        "language__ext": null,
+        "meta": null,
+        "contained": null,
+        "extension": null,
+        "modifierExtension": null,
+        "text": {
+            "__dict__": {
+                "resource_type": "Narrative",
+                "fhir_comments": null,
+                "extension": null,
+                "id": null,
+                "div": "div",
+                "div__ext": null,
+                "status": "generated",
+                "status__ext": null
+            },
+            "__fields_set__": [
+                "div",
+                "status"
+            ],
+            "__private_attribute_values__": {}
+        },
+        "active": null,
+        "active__ext": null,
+        "address": null,
+        "birthDate": "1970-01-01",
+        "birthDate__ext": null,
+        "communication": null,
+        "contact": null,
+        "deceasedBoolean": null,
+        "deceasedBoolean__ext": null,
+        "deceasedDateTime": null,
+        "deceasedDateTime__ext": null,
+        "gender": "male",
+        "gender__ext": null,
+        "generalPractitioner": null,
+        "identifier": [
+            {
+                "__dict__": {
+                    "resource_type": "Identifier",
+                    "fhir_comments": null,
+                    "extension": null,
+                    "id": null,
+                    "assigner": null,
+                    "period": null,
+                    "system": "http://example.org/fhir/ids",
+                    "system__ext": null,
+                    "type": null,
+                    "use": null,
+                    "use__ext": null,
+                    "value": "14456464564646464646456462345",
+                    "value__ext": null
+                },
+                "__fields_set__": [
+                    "value",
+                    "system"
+                ],
+                "__private_attribute_values__": {}
+            }
+        ],
+        "link": null,
+        "managingOrganization": null,
+        "maritalStatus": null,
+        "multipleBirthBoolean": null,
+        "multipleBirthBoolean__ext": null,
+        "multipleBirthInteger": null,
+        "multipleBirthInteger__ext": null,
+        "name": [
+            {
+                "__dict__": {
+                    "resource_type": "HumanName",
+                    "fhir_comments": null,
+                    "extension": null,
+                    "id": null,
+                    "family": "Doe",
+                    "family__ext": null,
+                    "given": [
+                        "John"
+                    ],
+                    "given__ext": null,
+                    "period": null,
+                    "prefix": null,
+                    "prefix__ext": null,
+                    "suffix": null,
+                    "suffix__ext": null,
+                    "text": null,
+                    "text__ext": null,
+                    "use": "official",
+                    "use__ext": null
+                },
+                "__fields_set__": [
+                    "given",
+                    "use",
+                    "family"
+                ],
+                "__private_attribute_values__": {}
+            }
+        ],
+        "photo": null,
+        "telecom": [
+            {
+                "__dict__": {
+                    "resource_type": "ContactPoint",
+                    "fhir_comments": null,
+                    "extension": null,
+                    "id": null,
+                    "period": null,
+                    "rank": 2,
+                    "rank__ext": null,
+                    "system": "email",
+                    "system__ext": null,
+                    "use": "work",
+                    "use__ext": null,
+                    "value": "123",
+                    "value__ext": null
+                },
+                "__fields_set__": [
+                    "value",
+                    "rank",
+                    "use",
+                    "system"
+                ],
+                "__private_attribute_values__": {}
+            }
+        ]
+    },
+    "__fields_set__": [
+        "gender",
+        "id",
+        "telecom",
+        "name",
+        "birthDate",
+        "fhir_comments",
+        "text",
+        "identifier"
+    ],
+    "__private_attribute_values__": {}
+}
