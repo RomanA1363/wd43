@@ -20,6 +20,31 @@ us_states = ["Alaska", "Alabama", "Arkansas", "American Samoa", "Arizona", "Cali
 
 os.system("clear")
 
+val='555-333-3344'
+
+telecom = [
+    {
+        "system": "phone",
+        "value": val,
+        "use": "home",
+        "rank": "1",  
+        "period" : {
+            "start":"2023-01-01", 
+                    "end":"2023-08-01"
+                    }
+    },
+    {
+        "system": "email",
+        "value": "johndoe@example.com",
+        "use": "work",
+        "rank": "2",
+         "period" : {
+             "start":"2023-02-04", 
+                     "end":"2023-04-06"
+                     }
+    }
+]
+
 
 
 
@@ -38,16 +63,14 @@ patient.name = [{"use": "official", "family": "Doe", "given": ["John"]}]
 
 patient.gender = "male"
 patient.birthDate = "1970-01-01"
-patient.telecom=[{"system": "email", "value": "123", "use": "work", "rank": "2"}]
+#patient.telecom=[{"system": "email", "value": "123", "use": "work", "rank": "2"}]
+
+patient.telecom=telecom
 
 
 
 
-
-patient_json = json.dumps(patient.__dict__, indent=2)
-
-# Print the JSON representation of the FHIR Patient resource
-print(patient_json)
+print(patient)
 
 
 
