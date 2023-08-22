@@ -2,6 +2,9 @@ import json, os
 
 os.system("clear")
 
+
+
+
 class FHIRPatient:
     def __init__(self):
         self.resourceType = "Patient"
@@ -77,4 +80,8 @@ p.address=[a1,a2]
 
 
 
-print(p.address)
+# Serialize the FHIR Patient resource to JSON
+patient_json = json.dumps(p.__dict__, indent=2)
+
+# Print the JSON representation of the FHIR Patient resource
+print(patient_json)
