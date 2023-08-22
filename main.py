@@ -14,11 +14,11 @@ from json import JSONEncoder
 import time
 
 
-start_time = time.time()
+
      
 us_states = ["Alaska", "Alabama", "Arkansas", "American Samoa", "Arizona", "California", "Colorado", "Connecticut", "District ", "of Columbia", "Delaware", "Florida", "Georgia", "Guam", "Hawaii", "Iowa", "Idaho", "Illinois", "Indiana", "Kansas", "Kentucky", "Louisiana", "Massachusetts", "Maryland", "Maine", "Michigan", "Minnesota", "Missouri", "Mississippi", "Montana", "North Carolina", "North Dakota", "Nebraska", "New Hampshire", "New Jersey", "New Mexico", "Nevada", "New York", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Puerto Rico", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Virginia", "Virgin Islands", "Vermont", "Washington", "Wisconsin", "West Virginia", "Wyoming"]
 
-
+os.system("clear")
 
 
 
@@ -33,6 +33,7 @@ patient.text='{"status":"generated", "div":"div"}'
 
 patient.identifier = [{"system": "http://example.org/fhir/ids", "value": "14456464564646464646456462345"}]
 patient.name = [{"use": "official", "family": "Doe", "given": ["John"]}]
+#patient.name.__subclasshook__
 patient.gender = "male"
 patient.birthDate = "1970-01-01"
 patient.telecom=[{"system": "email", "value": "123", "use": "work", "rank": "2"}]
@@ -41,13 +42,19 @@ patient.telecom=[{"system": "email", "value": "123", "use": "work", "rank": "2"}
 
 
 
+# print(f"My name is {name} and I am {age} years old.")
+
+#for i in patient.name:
+print(patient)
+
 
 
 
 
 
 #print(jsonpickle.encode(patient, unpicklable=False, make_refs=False, keys = False) )
-out=jsonpickle.encode(patient, unpicklable=False, make_refs=False, keys = False)
-with open('/Users/romankhmaladze/Documents/Websites/wd43/p.output.json', "w") as f:
-    f.write(out)
-print("--- %s seconds ---" % (time.time() - start_time))
+#out=jsonpickle.encode(patient, unpicklable=False, make_refs=False, keys = True, backend=None)
+
+# with open('/Users/romankhmaladze/Documents/Websites/wd43/p.output.json', "w") as f:
+#     f.write(out)
+# print("--- %s seconds ---" % (time.time() - start_time))

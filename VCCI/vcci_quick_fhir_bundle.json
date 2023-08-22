@@ -1,0 +1,2496 @@
+{
+	"resourceType": "Bundle",
+	"identifier": {
+		"system": "http://nxt.org/BundleIds",
+		"value": "e0e30e2e-21e2-474b-8b71-96ef6fde2535"
+	},
+	"type": "transaction",
+	"timestamp": "2023-08-21T10:54:21.244-04:00",
+	"entry": [
+		{
+			"fullUrl": "http://nxt.org/Patient/vitl.eqmcd_sdoh|123456",
+			"resource": {
+				"resourceType": "Patient",
+				"meta": {
+					"lastUpdated": "2023-08-21T10:54:21.244-04:00",
+					"security": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "AUTHPOL",
+							"display": "authorization policy"
+						},
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "RestrictedConfidentialityMark",
+							"display": "restricted confidentiality mark"
+						}
+					]
+				},
+				"identifier": [
+					{
+						"system": "vitl.eqmdc_sdoh",
+						"value": "123456"
+					}
+				],
+				"name": [
+					{
+						"family": "WANTSIT",
+						"given": [
+							"ROMAN"
+						]
+					}
+				],
+				"birthDate": "1901-01-01"
+			},
+			"request": {
+				"method": "PUT"
+			}
+		},
+		{
+			"fullUrl": "http://nxt.org/Questionnaire/vitl.eqmcd_sdoh|fd088e6d-c6e7-470e-b582-ce3eff4d958b",
+			"resource": {
+				"resourceType": "Questionnaire",
+				"meta": {
+					"lastUpdated": "2023-08-21T10:54:21.244-04:00",
+					"security": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "AUTHPOL",
+							"display": "authorization policy"
+						},
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "RestrictedConfidentialityMark",
+							"display": "restricted confidentiality mark"
+						}
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://nxt.org/surveys",
+						"value": "1197"
+					}
+				],
+				"version": "1.0",
+				"name": "New to Medicaid Screening",
+				"title": "New to Medicaid Screening",
+				"status": "active",
+				"publisher": "VCCI",
+				"useContext": [
+					{
+						"code": {
+							"system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+							"code": "program",
+							"display": "program"
+						},
+						"valueCodeableConcept": {
+							"text": "Social Determinants of Health"
+						}
+					}
+				],
+				"lastReviewDate": "2023-08-21",
+				"item": [
+					{
+						"linkId": "7969",
+						"text": "Who is filling out the survey?",
+						"type": "display"
+					},
+					{
+						"linkId": "7970",
+						"text": "Did you verify HIPAA?",
+						"type": "display"
+					},
+					{
+						"linkId": "7971",
+						"text": "What prompted signing up for Medicaid?",
+						"type": "display"
+					},
+					{
+						"linkId": "7972",
+						"text": "Do you have any urgent healthcare related issues you want to discuss today?",
+						"type": "display"
+					},
+					{
+						"linkId": "7973",
+						"text": "Do you have a PCP you see regularly?",
+						"type": "display"
+					},
+					{
+						"linkId": "7973",
+						"text": "Do you have a PCP you see regularly?",
+						"type": "display"
+					},
+					{
+						"linkId": "7995",
+						"text": "Have you been to a dentist in the past year?",
+						"type": "display"
+					},
+					{
+						"linkId": "7995",
+						"text": "Have you been to a dentist in the past year?",
+						"type": "display"
+					},
+					{
+						"linkId": "7996",
+						"text": "Dentist Name/Practice",
+						"type": "display"
+					},
+					{
+						"linkId": "7998",
+						"text": "Do you have a scheduled appointment for a dental cleaning/check up?",
+						"type": "display"
+					},
+					{
+						"linkId": "7977",
+						"text": "Do you have any of the following? Select all that apply. ",
+						"type": "display"
+					},
+					{
+						"linkId": "7978",
+						"text": "Have you been to the ED or had an Inpatient stay in the past 3 months? If yes for chronic condition, Risk 3.",
+						"type": "display"
+					},
+					{
+						"linkId": "7979",
+						"text": "Do you need to use medical care, mental health, home health or other health services at least once every 3 months?",
+						"type": "display"
+					},
+					{
+						"linkId": "7980",
+						"text": "Are you taking 5 or more prescriptions?",
+						"type": "display"
+					},
+					{
+						"linkId": "7981",
+						"text": "In general, compared to other people your age, would you say your  health is:--if member responds with fair/poor ask next question",
+						"type": "display"
+					},
+					{
+						"linkId": "7983",
+						"text": "Are you currently pregnant or intend to become pregnant in the next year? If pregnant or in need of method of contraception, help to schedule PCP or OB/GYN visit",
+						"type": "display"
+					},
+					{
+						"linkId": "7984",
+						"text": "Do you smoke or use tobacco products?",
+						"type": "display"
+					},
+					{
+						"linkId": "7985",
+						"text": "Have you or has anyone ever expressed concerns about your use of alcohol or any drugs, including prescriptions?",
+						"type": "display"
+					},
+					{
+						"linkId": "7986",
+						"text": "Are you currently or have you experienced depression, anxiety or other mental health issues?",
+						"type": "display"
+					},
+					{
+						"linkId": "7988",
+						"text": "Do you feel controlled, isolated or afraid by anyone in your life?",
+						"type": "display"
+					},
+					{
+						"linkId": "7991",
+						"text": "Do you have any non-healthcare relate needs you are unable to afford? Select all that apply. If food/housing, Risk 3. ",
+						"type": "display"
+					},
+					{
+						"linkId": "7992",
+						"text": "What is the Member's risk level?",
+						"type": "display"
+					}
+				]
+			},
+			"request": {
+				"method": "PUT"
+			}
+		},
+		{
+			"fullUrl": "http://nxt.org/QuestionnaireResponse/80a362ab-38d8-438f-880f-96eff65e0c25",
+			"resource": {
+				"resourceType": "QuestionnaireResponse",
+				"meta": {
+					"lastUpdated": "2023-08-21T10:54:21.244-04:00",
+					"security": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "AUTHPOL",
+							"display": "authorization policy"
+						},
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "RestrictedConfidentialityMark",
+							"display": "restricted confidentiality mark"
+						}
+					]
+				},
+				"questionnaire": "http://nxt.org/fhir/Questionnaire/1197|1.0",
+				"status": "completed",
+				"authored": "2023-08-21T09:59:53-04:00",
+				"author": {
+					"reference": "http://nxt.org/fhir/vitl.eqmcd_sdoh",
+					"type": "Organization",
+					"display": "VCCI"
+				},
+				"source": {
+					"reference": "http://nxt.org/fhir/Patient/vitl.eqmcd_sdoh|123456",
+					"type": "Patient",
+					"display": "WANTSIT, ROMAN"
+				},
+				"item": [
+					{
+						"linkId": "7969",
+						"definition": "Who is filling out the survey?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7970",
+						"definition": "Did you verify HIPAA?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7971",
+						"definition": "What prompted signing up for Medicaid?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7972",
+						"definition": "Do you have any urgent healthcare related issues you want to discuss today?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7973",
+						"definition": "Do you have a PCP you see regularly?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7973",
+						"definition": "Do you have a PCP you see regularly?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7995",
+						"definition": "Have you been to a dentist in the past year?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7995",
+						"definition": "Have you been to a dentist in the past year?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7996",
+						"definition": "Dentist Name/Practice",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7998",
+						"definition": "Do you have a scheduled appointment for a dental cleaning/check up?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7977",
+						"definition": "Do you have any of the following? Select all that apply. ",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7978",
+						"definition": "Have you been to the ED or had an Inpatient stay in the past 3 months? If yes for chronic condition, Risk 3.",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7979",
+						"definition": "Do you need to use medical care, mental health, home health or other health services at least once every 3 months?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7980",
+						"definition": "Are you taking 5 or more prescriptions?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7981",
+						"definition": "In general, compared to other people your age, would you say your  health is:--if member responds with fair/poor ask next question",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7983",
+						"definition": "Are you currently pregnant or intend to become pregnant in the next year? If pregnant or in need of method of contraception, help to schedule PCP or OB/GYN visit",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7984",
+						"definition": "Do you smoke or use tobacco products?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7985",
+						"definition": "Have you or has anyone ever expressed concerns about your use of alcohol or any drugs, including prescriptions?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7986",
+						"definition": "Are you currently or have you experienced depression, anxiety or other mental health issues?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7988",
+						"definition": "Do you feel controlled, isolated or afraid by anyone in your life?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7991",
+						"definition": "Do you have any non-healthcare relate needs you are unable to afford? Select all that apply. If food/housing, Risk 3. ",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7992",
+						"definition": "What is the Member's risk level?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					}
+				]
+			},
+			"request": {
+				"method": "PUT"
+			}
+		},
+		{
+			"fullUrl": "http://nxt.org/Questionnaire/vitl.eqmcd_sdoh|117bac11-441e-414a-a0fe-bd4ff57e833a",
+			"resource": {
+				"resourceType": "Questionnaire",
+				"meta": {
+					"lastUpdated": "2023-08-21T10:54:21.244-04:00",
+					"security": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "AUTHPOL",
+							"display": "authorization policy"
+						},
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "RestrictedConfidentialityMark",
+							"display": "restricted confidentiality mark"
+						}
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://nxt.org/surveys",
+						"value": "1194"
+					}
+				],
+				"version": "1.0",
+				"name": "General  Assessment Survey",
+				"title": "General  Assessment Survey",
+				"status": "active",
+				"publisher": "VCCI",
+				"useContext": [
+					{
+						"code": {
+							"system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+							"code": "program",
+							"display": "program"
+						},
+						"valueCodeableConcept": {
+							"text": "Social Determinants of Health"
+						}
+					}
+				],
+				"lastReviewDate": "2023-08-21",
+				"item": [
+					{
+						"linkId": "7772",
+						"text": "HIPAA Verified?",
+						"type": "display"
+					},
+					{
+						"linkId": "7773",
+						"text": "(Case Manager instructs on goals of program) Member agrees to participate in Case Management?",
+						"type": "display"
+					},
+					{
+						"linkId": "7776",
+						"text": "Are you comfortable speaking with me in English?",
+						"type": "display"
+					},
+					{
+						"linkId": "7777",
+						"text": "Is there need for interpretive services?",
+						"type": "display"
+					},
+					{
+						"linkId": "7778",
+						"text": "Do you have a primary care provider?",
+						"type": "display"
+					},
+					{
+						"linkId": "7778",
+						"text": "Do you have a primary care provider?",
+						"type": "display"
+					},
+					{
+						"linkId": "7779",
+						"text": "Do you have difficulty accessing a primary care physician?",
+						"type": "display"
+					},
+					{
+						"linkId": "7780",
+						"text": "During the past 12 months have you visited your doctor's office?",
+						"type": "display"
+					},
+					{
+						"linkId": "7780",
+						"text": "During the past 12 months have you visited your doctor's office?",
+						"type": "display"
+					},
+					{
+						"linkId": "7781",
+						"text": "How many visits have you had with your PCP in the last 12 months?",
+						"type": "display"
+					},
+					{
+						"linkId": "7782",
+						"text": "Do you see a specialist(s) (Please add specialists to the Provider tab)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7782",
+						"text": "Do you see a specialist(s) (Please add specialists to the Provider tab)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7783",
+						"text": "Have you had your blood pressure checked within the last 12 months?",
+						"type": "display"
+					},
+					{
+						"linkId": "7784",
+						"text": "Is your blood pressure at or under the target your doctor recommends?",
+						"type": "display"
+					},
+					{
+						"linkId": "7785",
+						"text": "Have you had your cholesterol levels measured within the last 12 months?",
+						"type": "display"
+					},
+					{
+						"linkId": "7786",
+						"text": "How many times have you been to the urgent care/walk-in clinic in the past 12 months?",
+						"type": "display"
+					},
+					{
+						"linkId": "7787",
+						"text": "How many times have you been to the emergency department/emergency room in the past 12 months? ",
+						"type": "display"
+					},
+					{
+						"linkId": "7788",
+						"text": "How many times have you been in the hospital overnight or longer in the past 12 months?",
+						"type": "display"
+					},
+					{
+						"linkId": "7789",
+						"text": "Have you had a flu shot within the last 12 months?",
+						"type": "display"
+					},
+					{
+						"linkId": "7790",
+						"text": "Have you had a pneumonia shot within the past 5 years?",
+						"type": "display"
+					},
+					{
+						"linkId": "7791",
+						"text": "(Case Manager to answer) Did you document the height and weight on the clinical tracker?",
+						"type": "display"
+					},
+					{
+						"linkId": "7792",
+						"text": "BMI (Case Manager to answer) Is the member considered underweight (BMI<20)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7793",
+						"text": "BMI (Case Manager to answer) Is the member considered overweight or obese (BMI>25)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7795",
+						"text": "For Females: When was the last time you had a pap smear (Select option and enter date in free text box)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7796",
+						"text": "For Females: Would you like to become pregnant within the next year?",
+						"type": "display"
+					},
+					{
+						"linkId": "7798",
+						"text": "What chronic conditions do you have?",
+						"type": "display"
+					},
+					{
+						"linkId": "7798",
+						"text": "What chronic conditions do you have?",
+						"type": "display"
+					},
+					{
+						"linkId": "7798",
+						"text": "What chronic conditions do you have?",
+						"type": "display"
+					},
+					{
+						"linkId": "7798",
+						"text": "What chronic conditions do you have?",
+						"type": "display"
+					},
+					{
+						"linkId": "7798",
+						"text": "What chronic conditions do you have?",
+						"type": "display"
+					},
+					{
+						"linkId": "7798",
+						"text": "What chronic conditions do you have?",
+						"type": "display"
+					},
+					{
+						"linkId": "7798",
+						"text": "What chronic conditions do you have?",
+						"type": "display"
+					},
+					{
+						"linkId": "7799",
+						"text": "Do you have a self-management action plan for your condition(s)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7800",
+						"text": "Do you have any vision problems?",
+						"type": "display"
+					},
+					{
+						"linkId": "7802",
+						"text": "Do you have a hearing problem?",
+						"type": "display"
+					},
+					{
+						"linkId": "7804",
+						"text": "Do you have any problems with your appetite?",
+						"type": "display"
+					},
+					{
+						"linkId": "7805",
+						"text": "Do you have difficulty swallowing?",
+						"type": "display"
+					},
+					{
+						"linkId": "7806",
+						"text": "Do you have any of the following symptoms (Select all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7807",
+						"text": "Are you on any type of special diet (Select all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7810",
+						"text": "Do you have chronic pain (pain that has been treated for 6 months or more)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7811",
+						"text": "Are you being treated by a doctor or clinic for your pain?",
+						"type": "display"
+					},
+					{
+						"linkId": "7813",
+						"text": "Do you have any skin problems or wounds?",
+						"type": "display"
+					},
+					{
+						"linkId": "7814",
+						"text": "Are you prescribed medications but not taking them?",
+						"type": "display"
+					},
+					{
+						"linkId": "7815",
+						"text": "Do you ever forget to take or refill your medication?",
+						"type": "display"
+					},
+					{
+						"linkId": "7816",
+						"text": "Do you take your medications exactly as your doctor has instructed you to?",
+						"type": "display"
+					},
+					{
+						"linkId": "7817",
+						"text": "Are you careless at times about taking your medications?",
+						"type": "display"
+					},
+					{
+						"linkId": "7818",
+						"text": "Sometimes if you feel worse when taking your medicine, do you stop taking it?",
+						"type": "display"
+					},
+					{
+						"linkId": "7819",
+						"text": "Are you able to afford your medications?",
+						"type": "display"
+					},
+					{
+						"linkId": "7820",
+						"text": "Do transportation issues prevent you from obtaining your medications?",
+						"type": "display"
+					},
+					{
+						"linkId": "7821",
+						"text": "(Case Manager to answer) Have you completed medication reconciliation with member?",
+						"type": "display"
+					},
+					{
+						"linkId": "7822",
+						"text": "Which of the following activities are you UNABLE to perform without assistance (Select all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7823",
+						"text": "Do you use assistive devices for any of these activities?",
+						"type": "display"
+					},
+					{
+						"linkId": "7825",
+						"text": "(Case Manager to answer) Does the member require assistance or is dependent with two (2) or more activities of daily living (ADLs)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7826",
+						"text": "Do you use any Medical equipment (i.e. glucometer, cane, oxygen, CPAP, nebulizer, walker, etc) in addition to devices indicated above?",
+						"type": "display"
+					},
+					{
+						"linkId": "7829",
+						"text": "Do you have a support system?",
+						"type": "display"
+					},
+					{
+						"linkId": "7830",
+						"text": "Who is the PRIMARY caregiver/support? ",
+						"type": "display"
+					},
+					{
+						"linkId": "7831",
+						"text": "(Case Manager) Does the member have adequate caregiver/support?",
+						"type": "display"
+					},
+					{
+						"linkId": "7832",
+						"text": "Which of the following the community resources are currently being used (check all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7832",
+						"text": "Which of the following the community resources are currently being used (check all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7832",
+						"text": "Which of the following the community resources are currently being used (check all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7832",
+						"text": "Which of the following the community resources are currently being used (check all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7832",
+						"text": "Which of the following the community resources are currently being used (check all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7833",
+						"text": "Does the member have access to appropriate community resources?",
+						"type": "display"
+					},
+					{
+						"linkId": "7834",
+						"text": "(Case Manager) Does the member need additional community resources?",
+						"type": "display"
+					},
+					{
+						"linkId": "7835",
+						"text": "Which of the following the community resources are needed?",
+						"type": "display"
+					},
+					{
+						"linkId": "7835",
+						"text": "Which of the following the community resources are needed?",
+						"type": "display"
+					},
+					{
+						"linkId": "7836",
+						"text": "Does the member have transportation issues accessing needed medical services?",
+						"type": "display"
+					},
+					{
+						"linkId": "7837",
+						"text": "Is the member unable to afford any of the following: (Select all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7838",
+						"text": "Are there any non-healthcare related needs the member is unable to afford (Select all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7838",
+						"text": "Are there any non-healthcare related needs the member is unable to afford (Select all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7838",
+						"text": "Are there any non-healthcare related needs the member is unable to afford (Select all that apply)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7839",
+						"text": "Your housing situation can be described as (select one):",
+						"type": "display"
+					},
+					{
+						"linkId": "7840",
+						"text": "(Case Manager) Does the member have a stable housing situation?",
+						"type": "display"
+					},
+					{
+						"linkId": "7841",
+						"text": "Have you had any falls either inside or outside your home in the last 12 months?",
+						"type": "display"
+					},
+					{
+						"linkId": "7843",
+						"text": "Do you have problems learning about your medical condition because of understanding written materials that you get from your doctors, hospitals and pharmacists?",
+						"type": "display"
+					},
+					{
+						"linkId": "7844",
+						"text": "I would like to talk to you about any problems that you may have in getting everything you need to stay healthy? Do you need to have someone help you read instructions, pamphlets, or other written materials you get from your doctor or pharmacist?",
+						"type": "display"
+					},
+					{
+						"linkId": "7845",
+						"text": "Do you have any trouble filling out medical forms?",
+						"type": "display"
+					},
+					{
+						"linkId": "7846",
+						"text": "Do you have any cultural, religious or social practices that may affect your medical treatment or nutrition?",
+						"type": "display"
+					},
+					{
+						"linkId": "7847",
+						"text": "Over the past 2 weeks, have you felt down, depressed or hopeless?",
+						"type": "display"
+					},
+					{
+						"linkId": "7848",
+						"text": "Over the past 2 weeks have you felt little interest or pleasure in doing things?",
+						"type": "display"
+					},
+					{
+						"linkId": "7849",
+						"text": "(Case Manager to answer) Did you answer yes to either of the depression screening questions?",
+						"type": "display"
+					},
+					{
+						"linkId": "7850",
+						"text": "Over the past 2 weeks have you thought about harming yourself in any way?",
+						"type": "display"
+					},
+					{
+						"linkId": "7851",
+						"text": "Over the last 2 weeks, how often have you had trouble falling or staying asleep, or sleeping too much?",
+						"type": "display"
+					},
+					{
+						"linkId": "7852",
+						"text": "Over the last 2 weeks, how often have you had little interest or pleasure in doing things?",
+						"type": "display"
+					},
+					{
+						"linkId": "7853",
+						"text": "Over the last 2 weeks, how often have you felt down, depressed or hopeless?",
+						"type": "display"
+					},
+					{
+						"linkId": "7853",
+						"text": "Over the last 2 weeks, how often have you felt down, depressed or hopeless?",
+						"type": "display"
+					},
+					{
+						"linkId": "7854",
+						"text": "Over the last 2 weeks, how often have you felt tired or had little energy?",
+						"type": "display"
+					},
+					{
+						"linkId": "7855",
+						"text": "Over the last 2 weeks, how often have you had a poor appetite or overeating?",
+						"type": "display"
+					},
+					{
+						"linkId": "7856",
+						"text": "Over the last 2 weeks, how often have you felt bad about yourself-or that you are a failure or have let yourself or your family down?",
+						"type": "display"
+					},
+					{
+						"linkId": "7857",
+						"text": "Over the last 2 weeks, how often have you had trouble concentrating on things, such as reading the newspaper or watching television",
+						"type": "display"
+					},
+					{
+						"linkId": "7858",
+						"text": "Over the last 2 weeks, how often have you noticed yourself moving or speaking so slowly that other people could have noticed? Or the opposite-being so fidgety or restless that you have been moving around a lot more than usual?",
+						"type": "display"
+					},
+					{
+						"linkId": "7859",
+						"text": "Over the last 2 weeks, how often have you thought that you would be better off dead, or of hurting yourself in some way?",
+						"type": "display"
+					},
+					{
+						"linkId": "7859",
+						"text": "Over the last 2 weeks, how often have you thought that you would be better off dead, or of hurting yourself in some way?",
+						"type": "display"
+					},
+					{
+						"linkId": "7859",
+						"text": "Over the last 2 weeks, how often have you thought that you would be better off dead, or of hurting yourself in some way?",
+						"type": "display"
+					},
+					{
+						"linkId": "7860",
+						"text": "(Case Manager to answer) Total score from PHQ-9 is (add values in front of each answer option in this section to get your PHQ-9 score):",
+						"type": "display"
+					},
+					{
+						"linkId": "7861",
+						"text": "Have you made any plans or considered how you might harm yourself?",
+						"type": "display"
+					},
+					{
+						"linkId": "7862",
+						"text": "Have you ever attempted to harm yourself in the past?",
+						"type": "display"
+					},
+					{
+						"linkId": "7863",
+						"text": "Did you tell anyone that you were going to commit suicide, or threatened that you might hurt yourself?",
+						"type": "display"
+					},
+					{
+						"linkId": "7863",
+						"text": "Did you tell anyone that you were going to commit suicide, or threatened that you might hurt yourself?",
+						"type": "display"
+					},
+					{
+						"linkId": "7864",
+						"text": "Who did you tell?",
+						"type": "display"
+					},
+					{
+						"linkId": "7867",
+						"text": "Do you think you might hurt yourself before you see your doctor again?",
+						"type": "display"
+					},
+					{
+						"linkId": "7868",
+						"text": "In an average week, how many times do you perform at least 30 minutes of physical activity (Physical activity is any activity causing you to breathe heavier and your heart to beat faster. Examples: Walking, jogging, swimming, participating in sports, resistance training, etc)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7869",
+						"text": "Have you ever smoked or used tobacco products?",
+						"type": "display"
+					},
+					{
+						"linkId": "7870",
+						"text": "Are you ready to make a plan to stop smoking?",
+						"type": "display"
+					},
+					{
+						"linkId": "7871",
+						"text": "Are you currently in treatment for a mental health condition?",
+						"type": "display"
+					},
+					{
+						"linkId": "7872",
+						"text": "In the past year, have you continued to use alcohol or drugs longer than you intended?",
+						"type": "display"
+					},
+					{
+						"linkId": "7873",
+						"text": "Have you ever neglected some of your usual responsibilities because of alcohol or drug use?",
+						"type": "display"
+					},
+					{
+						"linkId": "7874",
+						"text": "Have you ever wanted to cut down or stop using alcohol or drugs but couldn't?",
+						"type": "display"
+					},
+					{
+						"linkId": "7875",
+						"text": "Has your family, a friend or anyone else ever told you they objected to your alcohol or drug use?",
+						"type": "display"
+					},
+					{
+						"linkId": "7876",
+						"text": "Have you ever found yourself preoccupied with wanting to use alcohol or drugs?",
+						"type": "display"
+					},
+					{
+						"linkId": "7877",
+						"text": "Have you ever used alcohol or drugs to relieve emotional discomfort, such as sadness, anger or boredom?",
+						"type": "display"
+					},
+					{
+						"linkId": "7879",
+						"text": "(Case Manager to Answer) What is the member's UNCOPE Assessment Score?",
+						"type": "display"
+					},
+					{
+						"linkId": "7880",
+						"text": "Have you been treated with disrespect, shamed, or humiliated by your current partner?",
+						"type": "display"
+					},
+					{
+						"linkId": "7881",
+						"text": "Do you feel controlled or isolated by your current partner?",
+						"type": "display"
+					},
+					{
+						"linkId": "7882",
+						"text": "Have you been made to feel afraid, threatened or physically hurt by your current partner?",
+						"type": "display"
+					},
+					{
+						"linkId": "7883",
+						"text": "Have you ever been pressured or forced to do sexual things you didn't want to do?",
+						"type": "display"
+					},
+					{
+						"linkId": "7884",
+						"text": "Have you had any of these experiences with an ex-partner?",
+						"type": "display"
+					},
+					{
+						"linkId": "7885",
+						"text": "Does Member screen positive for risk of intimate partner violence or domestic assault? (Member responds 'Yes' to any of the above questions)",
+						"type": "display"
+					},
+					{
+						"linkId": "7886",
+						"text": "Do you ever experience anxiousness, or take medicine for anxiety?",
+						"type": "display"
+					},
+					{
+						"linkId": "7887",
+						"text": "In the last 2 weeks, how often have you been bothered by: Feeling nervous, anxious or on edge?",
+						"type": "display"
+					},
+					{
+						"linkId": "7888",
+						"text": "Not being able to stop or control worrying",
+						"type": "display"
+					},
+					{
+						"linkId": "7889",
+						"text": "Worrying too much about different things",
+						"type": "display"
+					},
+					{
+						"linkId": "7891",
+						"text": "Trouble relaxing",
+						"type": "display"
+					},
+					{
+						"linkId": "7892",
+						"text": "Being so restless that it is hard to sit still",
+						"type": "display"
+					},
+					{
+						"linkId": "7893",
+						"text": "Becoming easily annoyed or irritable",
+						"type": "display"
+					},
+					{
+						"linkId": "7894",
+						"text": "Feeling afraid as if something awful might happen",
+						"type": "display"
+					},
+					{
+						"linkId": "7895",
+						"text": "(Case Manager to Answer) What is the member's GAD-7 Score?",
+						"type": "display"
+					},
+					{
+						"linkId": "7896",
+						"text": "Do you have an advance directive?",
+						"type": "display"
+					},
+					{
+						"linkId": "7898",
+						"text": "(Case Manager to answer) Is the member interested in talking about advance care planning or Durable Power of Attorney for healthcare?",
+						"type": "display"
+					},
+					{
+						"linkId": "7899",
+						"text": "Do you consider your health to be Excellent, Good, Fair or Poor?",
+						"type": "display"
+					},
+					{
+						"linkId": "7900",
+						"text": "What is the member's short term personal health goal (SMART format: Specific, Measurable, Actionable, Realistic, Time limited)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7901",
+						"text": "What is the member's long term personal health goal (SMART format: Specific, Measurable, Actionable, Realistic, Time limited)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7902",
+						"text": "Is  there anything you feel may get in the way of you being able to complete your goals?",
+						"type": "display"
+					},
+					{
+						"linkId": "7903",
+						"text": "On a scale of 0-10, with 0 being not at all convinced and 10 being as convinced as you can be, how convinced are you that it is important to change (stated participant goal)",
+						"type": "display"
+					},
+					{
+						"linkId": "7904",
+						"text": "On  a scale of 0-10, with 0 being not at all confident and 10 being as confident as you can be, how confident are you that you can accomplish the goals we discussed?",
+						"type": "display"
+					},
+					{
+						"linkId": "7906",
+						"text": "(Case Manager to answer) What stage of change is the member in?",
+						"type": "display"
+					},
+					{
+						"linkId": "7909",
+						"text": "Is follow up required?",
+						"type": "display"
+					},
+					{
+						"linkId": "7910",
+						"text": "What is the plan for follow up?",
+						"type": "display"
+					},
+					{
+						"linkId": "7911",
+						"text": "What is the best way to get in touch with you (phone, email, text, etc.)?",
+						"type": "display"
+					},
+					{
+						"linkId": "7912",
+						"text": "Is there a time of day that is better to get in touch with you (early morning, after 5pm, etc)?",
+						"type": "display"
+					}
+				]
+			},
+			"request": {
+				"method": "PUT"
+			}
+		},
+		{
+			"fullUrl": "http://nxt.org/QuestionnaireResponse/3ffd2dbc-b741-452f-a8e4-7aad21e86265",
+			"resource": {
+				"resourceType": "QuestionnaireResponse",
+				"meta": {
+					"lastUpdated": "2023-08-21T10:54:21.259-04:00",
+					"security": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "AUTHPOL",
+							"display": "authorization policy"
+						},
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+							"code": "RestrictedConfidentialityMark",
+							"display": "restricted confidentiality mark"
+						}
+					]
+				},
+				"questionnaire": "http://nxt.org/fhir/Questionnaire/1194|1.0",
+				"status": "completed",
+				"authored": "2023-08-21T09:59:53-04:00",
+				"author": {
+					"reference": "http://nxt.org/fhir/vitl.eqmcd_sdoh",
+					"type": "Organization",
+					"display": "VCCI"
+				},
+				"source": {
+					"reference": "http://nxt.org/fhir/Patient/vitl.eqmcd_sdoh|123456",
+					"type": "Patient",
+					"display": "WANTSIT, ROMAN"
+				},
+				"item": [
+					{
+						"linkId": "7772",
+						"definition": "HIPAA Verified?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7773",
+						"definition": "(Case Manager instructs on goals of program) Member agrees to participate in Case Management?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7776",
+						"definition": "Are you comfortable speaking with me in English?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7777",
+						"definition": "Is there need for interpretive services?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7778",
+						"definition": "Do you have a primary care provider?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7778",
+						"definition": "Do you have a primary care provider?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7779",
+						"definition": "Do you have difficulty accessing a primary care physician?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7780",
+						"definition": "During the past 12 months have you visited your doctor's office?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7780",
+						"definition": "During the past 12 months have you visited your doctor's office?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7781",
+						"definition": "How many visits have you had with your PCP in the last 12 months?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7782",
+						"definition": "Do you see a specialist(s) (Please add specialists to the Provider tab)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7782",
+						"definition": "Do you see a specialist(s) (Please add specialists to the Provider tab)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7783",
+						"definition": "Have you had your blood pressure checked within the last 12 months?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7784",
+						"definition": "Is your blood pressure at or under the target your doctor recommends?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7785",
+						"definition": "Have you had your cholesterol levels measured within the last 12 months?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7786",
+						"definition": "How many times have you been to the urgent care/walk-in clinic in the past 12 months?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7787",
+						"definition": "How many times have you been to the emergency department/emergency room in the past 12 months? ",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7788",
+						"definition": "How many times have you been in the hospital overnight or longer in the past 12 months?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7789",
+						"definition": "Have you had a flu shot within the last 12 months?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7790",
+						"definition": "Have you had a pneumonia shot within the past 5 years?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7791",
+						"definition": "(Case Manager to answer) Did you document the height and weight on the clinical tracker?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7792",
+						"definition": "BMI (Case Manager to answer) Is the member considered underweight (BMI<20)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7793",
+						"definition": "BMI (Case Manager to answer) Is the member considered overweight or obese (BMI>25)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7795",
+						"definition": "For Females: When was the last time you had a pap smear (Select option and enter date in free text box)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7796",
+						"definition": "For Females: Would you like to become pregnant within the next year?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7798",
+						"definition": "What chronic conditions do you have?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7798",
+						"definition": "What chronic conditions do you have?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7798",
+						"definition": "What chronic conditions do you have?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7798",
+						"definition": "What chronic conditions do you have?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7798",
+						"definition": "What chronic conditions do you have?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7798",
+						"definition": "What chronic conditions do you have?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7798",
+						"definition": "What chronic conditions do you have?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7799",
+						"definition": "Do you have a self-management action plan for your condition(s)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7800",
+						"definition": "Do you have any vision problems?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7802",
+						"definition": "Do you have a hearing problem?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7804",
+						"definition": "Do you have any problems with your appetite?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7805",
+						"definition": "Do you have difficulty swallowing?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7806",
+						"definition": "Do you have any of the following symptoms (Select all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7807",
+						"definition": "Are you on any type of special diet (Select all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7810",
+						"definition": "Do you have chronic pain (pain that has been treated for 6 months or more)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7811",
+						"definition": "Are you being treated by a doctor or clinic for your pain?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7813",
+						"definition": "Do you have any skin problems or wounds?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7814",
+						"definition": "Are you prescribed medications but not taking them?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7815",
+						"definition": "Do you ever forget to take or refill your medication?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7816",
+						"definition": "Do you take your medications exactly as your doctor has instructed you to?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7817",
+						"definition": "Are you careless at times about taking your medications?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7818",
+						"definition": "Sometimes if you feel worse when taking your medicine, do you stop taking it?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7819",
+						"definition": "Are you able to afford your medications?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7820",
+						"definition": "Do transportation issues prevent you from obtaining your medications?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7821",
+						"definition": "(Case Manager to answer) Have you completed medication reconciliation with member?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7822",
+						"definition": "Which of the following activities are you UNABLE to perform without assistance (Select all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7823",
+						"definition": "Do you use assistive devices for any of these activities?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7825",
+						"definition": "(Case Manager to answer) Does the member require assistance or is dependent with two (2) or more activities of daily living (ADLs)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7826",
+						"definition": "Do you use any Medical equipment (i.e. glucometer, cane, oxygen, CPAP, nebulizer, walker, etc) in addition to devices indicated above?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7829",
+						"definition": "Do you have a support system?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7830",
+						"definition": "Who is the PRIMARY caregiver/support? ",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7831",
+						"definition": "(Case Manager) Does the member have adequate caregiver/support?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7832",
+						"definition": "Which of the following the community resources are currently being used (check all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7832",
+						"definition": "Which of the following the community resources are currently being used (check all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7832",
+						"definition": "Which of the following the community resources are currently being used (check all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7832",
+						"definition": "Which of the following the community resources are currently being used (check all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7832",
+						"definition": "Which of the following the community resources are currently being used (check all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7833",
+						"definition": "Does the member have access to appropriate community resources?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7834",
+						"definition": "(Case Manager) Does the member need additional community resources?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7835",
+						"definition": "Which of the following the community resources are needed?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7835",
+						"definition": "Which of the following the community resources are needed?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7836",
+						"definition": "Does the member have transportation issues accessing needed medical services?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7837",
+						"definition": "Is the member unable to afford any of the following: (Select all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7838",
+						"definition": "Are there any non-healthcare related needs the member is unable to afford (Select all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7838",
+						"definition": "Are there any non-healthcare related needs the member is unable to afford (Select all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7838",
+						"definition": "Are there any non-healthcare related needs the member is unable to afford (Select all that apply)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7839",
+						"definition": "Your housing situation can be described as (select one):",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7840",
+						"definition": "(Case Manager) Does the member have a stable housing situation?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7841",
+						"definition": "Have you had any falls either inside or outside your home in the last 12 months?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7843",
+						"definition": "Do you have problems learning about your medical condition because of understanding written materials that you get from your doctors, hospitals and pharmacists?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7844",
+						"definition": "I would like to talk to you about any problems that you may have in getting everything you need to stay healthy? Do you need to have someone help you read instructions, pamphlets, or other written materials you get from your doctor or pharmacist?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7845",
+						"definition": "Do you have any trouble filling out medical forms?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7846",
+						"definition": "Do you have any cultural, religious or social practices that may affect your medical treatment or nutrition?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7847",
+						"definition": "Over the past 2 weeks, have you felt down, depressed or hopeless?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7848",
+						"definition": "Over the past 2 weeks have you felt little interest or pleasure in doing things?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7849",
+						"definition": "(Case Manager to answer) Did you answer yes to either of the depression screening questions?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7850",
+						"definition": "Over the past 2 weeks have you thought about harming yourself in any way?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7851",
+						"definition": "Over the last 2 weeks, how often have you had trouble falling or staying asleep, or sleeping too much?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7852",
+						"definition": "Over the last 2 weeks, how often have you had little interest or pleasure in doing things?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7853",
+						"definition": "Over the last 2 weeks, how often have you felt down, depressed or hopeless?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7853",
+						"definition": "Over the last 2 weeks, how often have you felt down, depressed or hopeless?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7854",
+						"definition": "Over the last 2 weeks, how often have you felt tired or had little energy?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7855",
+						"definition": "Over the last 2 weeks, how often have you had a poor appetite or overeating?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7856",
+						"definition": "Over the last 2 weeks, how often have you felt bad about yourself-or that you are a failure or have let yourself or your family down?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7857",
+						"definition": "Over the last 2 weeks, how often have you had trouble concentrating on things, such as reading the newspaper or watching television",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7858",
+						"definition": "Over the last 2 weeks, how often have you noticed yourself moving or speaking so slowly that other people could have noticed? Or the opposite-being so fidgety or restless that you have been moving around a lot more than usual?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7859",
+						"definition": "Over the last 2 weeks, how often have you thought that you would be better off dead, or of hurting yourself in some way?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7859",
+						"definition": "Over the last 2 weeks, how often have you thought that you would be better off dead, or of hurting yourself in some way?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7859",
+						"definition": "Over the last 2 weeks, how often have you thought that you would be better off dead, or of hurting yourself in some way?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7860",
+						"definition": "(Case Manager to answer) Total score from PHQ-9 is (add values in front of each answer option in this section to get your PHQ-9 score):",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7861",
+						"definition": "Have you made any plans or considered how you might harm yourself?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7862",
+						"definition": "Have you ever attempted to harm yourself in the past?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7863",
+						"definition": "Did you tell anyone that you were going to commit suicide, or threatened that you might hurt yourself?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7863",
+						"definition": "Did you tell anyone that you were going to commit suicide, or threatened that you might hurt yourself?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7864",
+						"definition": "Who did you tell?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7867",
+						"definition": "Do you think you might hurt yourself before you see your doctor again?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7868",
+						"definition": "In an average week, how many times do you perform at least 30 minutes of physical activity (Physical activity is any activity causing you to breathe heavier and your heart to beat faster. Examples: Walking, jogging, swimming, participating in sports, resistance training, etc)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7869",
+						"definition": "Have you ever smoked or used tobacco products?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7870",
+						"definition": "Are you ready to make a plan to stop smoking?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7871",
+						"definition": "Are you currently in treatment for a mental health condition?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7872",
+						"definition": "In the past year, have you continued to use alcohol or drugs longer than you intended?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7873",
+						"definition": "Have you ever neglected some of your usual responsibilities because of alcohol or drug use?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7874",
+						"definition": "Have you ever wanted to cut down or stop using alcohol or drugs but couldn't?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7875",
+						"definition": "Has your family, a friend or anyone else ever told you they objected to your alcohol or drug use?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7876",
+						"definition": "Have you ever found yourself preoccupied with wanting to use alcohol or drugs?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7877",
+						"definition": "Have you ever used alcohol or drugs to relieve emotional discomfort, such as sadness, anger or boredom?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7879",
+						"definition": "(Case Manager to Answer) What is the member's UNCOPE Assessment Score?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7880",
+						"definition": "Have you been treated with disrespect, shamed, or humiliated by your current partner?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7881",
+						"definition": "Do you feel controlled or isolated by your current partner?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7882",
+						"definition": "Have you been made to feel afraid, threatened or physically hurt by your current partner?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7883",
+						"definition": "Have you ever been pressured or forced to do sexual things you didn't want to do?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7884",
+						"definition": "Have you had any of these experiences with an ex-partner?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7885",
+						"definition": "Does Member screen positive for risk of intimate partner violence or domestic assault? (Member responds 'Yes' to any of the above questions)",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7886",
+						"definition": "Do you ever experience anxiousness, or take medicine for anxiety?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7887",
+						"definition": "In the last 2 weeks, how often have you been bothered by: Feeling nervous, anxious or on edge?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7888",
+						"definition": "Not being able to stop or control worrying",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7889",
+						"definition": "Worrying too much about different things",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7891",
+						"definition": "Trouble relaxing",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7892",
+						"definition": "Being so restless that it is hard to sit still",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7893",
+						"definition": "Becoming easily annoyed or irritable",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7894",
+						"definition": "Feeling afraid as if something awful might happen",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7895",
+						"definition": "(Case Manager to Answer) What is the member's GAD-7 Score?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7896",
+						"definition": "Do you have an advance directive?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7898",
+						"definition": "(Case Manager to answer) Is the member interested in talking about advance care planning or Durable Power of Attorney for healthcare?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7899",
+						"definition": "Do you consider your health to be Excellent, Good, Fair or Poor?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7900",
+						"definition": "What is the member's short term personal health goal (SMART format: Specific, Measurable, Actionable, Realistic, Time limited)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7901",
+						"definition": "What is the member's long term personal health goal (SMART format: Specific, Measurable, Actionable, Realistic, Time limited)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7902",
+						"definition": "Is  there anything you feel may get in the way of you being able to complete your goals?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7903",
+						"definition": "On a scale of 0-10, with 0 being not at all convinced and 10 being as convinced as you can be, how convinced are you that it is important to change (stated participant goal)",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7904",
+						"definition": "On  a scale of 0-10, with 0 being not at all confident and 10 being as confident as you can be, how confident are you that you can accomplish the goals we discussed?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7906",
+						"definition": "(Case Manager to answer) What stage of change is the member in?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7909",
+						"definition": "Is follow up required?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7910",
+						"definition": "What is the plan for follow up?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7911",
+						"definition": "What is the best way to get in touch with you (phone, email, text, etc.)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					},
+					{
+						"linkId": "7912",
+						"definition": "Is there a time of day that is better to get in touch with you (early morning, after 5pm, etc)?",
+						"answer": [
+							{
+								"valueString": "some answers have people's names"
+							}
+						]
+					}
+				]
+			},
+			"request": {
+				"method": "PUT"
+			}
+		}
+	]
+}
