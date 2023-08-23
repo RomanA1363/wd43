@@ -107,6 +107,7 @@ p.address=[a1,a2,a3]
 
 
 #https://sparkbyexamples.com/python/print-object-properties-and-values-in-python/#:~:text=You%20can%20use%20the%20python,in%20a%20human%2Dreadable%20format.
+#https://json-generator.com
 # Method 1: Using vars() mixed with pprint()
 #obj_vars = vars(p)
 #print(obj_vars)
