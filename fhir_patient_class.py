@@ -64,7 +64,28 @@ class Reference:
 
 
 
-
+telecom = [
+    {
+        "system": "phone",
+        "value": "555-333-3344",
+        "use": "home",
+        "rank": "1",  
+        "period" : {
+            "start":"2023-01-01", 
+                    "end":"2023-08-01"
+                    }
+    },
+    {
+        "system": "email",
+        "value": "johndoe@example.com",
+        "use": "work",
+        "rank": "2",
+         "period" : {
+             "start":"2023-02-04", 
+                     "end":"2023-04-06"
+                     }
+    }
+]
 
 
 a1=Address()
@@ -73,15 +94,29 @@ a1.city='Westminster'
 a2=Address()
 a2.city='Owings Mills'
 
+a3=Address()
+a3.city='Annapolis'
+
 p=FHIRPatient()
 p.name='Roman'
-p.address=[a1,a2]
+p.deceasedBoolean=True
+p.gender='M'
+p.telecom=telecom
+p.address=[a1,a2,a3]
 
 
 
+#https://sparkbyexamples.com/python/print-object-properties-and-values-in-python/#:~:text=You%20can%20use%20the%20python,in%20a%20human%2Dreadable%20format.
+# Method 1: Using vars() mixed with pprint()
+#obj_vars = vars(p)
+#print(obj_vars)
 
-# Serialize the FHIR Patient resource to JSON
-patient_json = json.dumps(p.__dict__, indent=2)
+# Method 2: Using dir()
+for attr in dir(p):
+    print(f"{attr}: {getattr(p, attr)}")
 
 # Print the JSON representation of the FHIR Patient resource
-print(patient_json)
+#print(json.dumps(p, default=str))
+
+for x in range(len(p.address)):
+    print (p.address[x].city)
