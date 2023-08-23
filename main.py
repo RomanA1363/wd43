@@ -25,7 +25,7 @@ val='555-333-3344'
 telecom = [
     {
         "system": "phone",
-        "value": val,
+        "value": "555-333-3344",
         "use": "home",
         "rank": "1",  
         "period" : {
