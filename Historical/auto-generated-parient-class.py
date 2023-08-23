@@ -6,6 +6,7 @@ import pandas
 
 #https://json2csharp.com/code-converters/json-to-python
 #https://jsonformatter.org/json-to-python
+#http://docs.smarthealthit.org/dstu2-examples/
 
 @dataclass
 class Telecom:

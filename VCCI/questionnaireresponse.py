@@ -12,7 +12,7 @@ from pydantic import Field, root_validator
 from pydantic.error_wrappers import ErrorWrapper, ValidationError
 from pydantic.errors import MissingError, NoneIsNotAllowedError
 
-from . import backboneelement, domainresource, fhirtypes
+from .. import backboneelement, domainresource, fhirtypes
 
 
 class QuestionnaireResponse(domainresource.DomainResource):
