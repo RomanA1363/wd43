@@ -4,6 +4,9 @@ from dataclasses import dataclass
 import json
 import pandas
 
+#https://json2csharp.com/code-converters/json-to-python
+#https://jsonformatter.org/json-to-python
+
 @dataclass
 class Telecom:
     system: str
