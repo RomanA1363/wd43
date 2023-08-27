@@ -1,0 +1,58 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-example",
+    "type": "transaction",
+    "timestamp": "2023-08-26T12:00:00Z",
+    "entry": [
+      {
+        "fullUrl": "urn:uuid:64dbe6d4-6ef6-4673-bcf0-9478f421ca18",
+        "resource": {
+          "resourceType": "Patient",
+          "id": "patient-example",
+          "identifier": [
+            {
+              "system": "http://example.org/patient-ids",
+              "value": "12345"
+            }
+          ],
+          "active": true,
+          "name": [
+            {
+              "use": "official",
+              "family": "Doe",
+              "given": ["John"]
+            }
+          ],
+          "gender": "male",
+          "birthDate": "1980-01-15"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:a0bcba47-8787-4a26-95f2-0e69b2777bfb",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "observation-example",
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "789-8",
+                "display": "Blood pressure"
+              }
+            ]
+          },
+          "subject": {
+            "reference": "urn:uuid:64dbe6d4-6ef6-4673-bcf0-9478f421ca18"
+          },
+          "valueQuantity": {
+            "value": 120,
+            "unit": "mmHg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]"
+          }
+        }
+      }
+    ]
+  }
+  
